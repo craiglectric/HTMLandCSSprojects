@@ -1,0 +1,21 @@
+/*here are some font styles for my project*/
+.font_1 {
+    background-color: black;
+    color: yellow;
+    font-size: large;
+}
+.font_2 {
+    background-color: darkblue;
+    color: white;
+    font-size: medium;
+}
+.my_style {
+    background-color: green;
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: large;
+}
+h1 {
+    text-shadow: 2px 2px #0000FF;
+}
