@@ -1,0 +1,12 @@
+p, h1 {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: large;
+}
+
+#contact {
+    width: auto;
+    margin: 2em;
+    border: 2px solid rgb(9, 9, 238);
+    border-radius: 5px;
+}
+
