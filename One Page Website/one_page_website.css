@@ -13,4 +13,8 @@ p, h1 {
 input {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+    width: auto;
+    margin: 1em;
+    border: 2px solid rgb(9, 9, 238);
+    border-radius: 10px;
 }
