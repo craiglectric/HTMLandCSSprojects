@@ -10,3 +10,7 @@ p, h1 {
     border-radius: 5px;
 }
 
+input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
