@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>First Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @media screen and (max-width: 600px) { p {color: blue;}
+            
+        }
+        table, th, td {border: 1px solid black;}
+        th, td {padding: 2em;}
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(79, 30, 240);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            z-index: 3;
+        }
+        .navbar a:hover {
+            background: rgb(4, 241, 222);
+            color: black;
+        }
+        .main {
+            padding: 16px;
+            margin-top: 30px;
+            height: auto;
+        }
+        .container {position: relative; text-align: center; color: rgb(4, 220, 249); z-index: 1;}
+        .top-right {position: absolute; top: 20em; right: 50%;}
+        .bottom-left {position: absolute; top: 20em; right: 50%}
+        .row {
+            display: flex;
+            width: 50em;
+            height: 20em;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px;
+            color: #ffffff;
+            height: auto;
+            width: auto;
+        }
+        .some-text:hover {
+            color: blueviolet;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+    </head>
+<body>
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#photo">Photo</a>
+    <a href="#table">Table</a>
+</div>
+<div class="container">
+    <img src="Basic_HTML_and_JavaScript_1/doug.jpg" class="center" style="filter: drop-shadow(13px 13px 10px blue); border-radius: 5em; margin-top: 5em;" width="100%">
+    <div class="top-right"><h1>Doug as a puppy!</h1></div>
+        <div class="overlay">
+            <div class="text">Doug as a Puppy!</div>
+        </div>
+</div>
+
+<h3>Doug's favorite things:</h3>
+<table style="width: 100%; padding: 1em;">
+    <tr style="background-color: aqua;">
+        <th>Favorite Things</th>
+        <th>Things he dislikes</th>
+    </tr>
+    <tr>
+        <td>Blankets</td>
+        <td>Loud noises</td>
+    </tr>
+    <tr>
+        <td>Treats</td>
+        <td>Dogs walking outside</td>
+    </tr>
+    <tr>
+        <td>Dinosaur Plushy</td>
+        <td>Peanut stealing his bed</td>
+    </tr>
+</table>
+<h1>A better way to organize his likes and dislikes:</h1>
+<div class="row">
+    <div class="column" style="background-color: rgb(5, 113, 113);">
+        <h2>Likes:</h2>
+        <p>Blankets <br> Treats <br> Dinosaur Plushy</p>
+    </div>
+    <div class="column" style="background-color: rgb(115, 11, 11);">
+        <h2>Dislikes:</h2>
+        <p>Loud noises</p>
+        <p>Dogs walking outside</p>
+        <p>Peanut stealing his bed</p>
+    </div>
+</div>
+<p class="some-text">As you can see Doug likes some things and dislikes other things. Overall, he's a good boy!</p>
+
+<p class="some-text">Doug loves to play in the forest.</p>
+
+<div class="container">
+<video autoplay muted loop><source src="forest.mp4" type="video/mp4"></video>
+<div class="bottom-left">Doug loves the forest</div>
+<div class="overlay">
+    <div class="text">Doug loves the forest!</div>
+</div>
+</div>
+
+<p class="some-text">Doug also loves to play at the sand dunes. He goes on many adventures!</p>
+
+<iframe autoplay muted loop width="560" height="315" src="https://www.youtube.com/embed/iwel2Znv7-c" title="YouTube video player" frameborder="10px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+<footer style="margin: 5rem; text-align: center; font-weight: bold;">
+    This is the footer of my Challenge project! -- &copy;Doug 2022
+</footer>
