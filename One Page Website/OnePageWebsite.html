@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Pets</title>
+        <link rel="stylesheet" href="one_page_website.css">
+        <script src="JS/one_page_website.js" defer></script>
+    </head>
+<body>
+<!--Start NAV-->
+<div>
+    <div>
+        <ul>
+            <a href="#home" id=link><li>Home</li></a>
+            <a href="#video" id=link><li>Video</li></a>
+            <a href="#gallery" id=link><li>Gallery</li></a>
+            <a href="#contact" id=link><li>Contact</li></a>
+        </ul>
+    </div>
+</div>
+<!--End NAV-->
+
+<!--Main Page/info-->
+<main>
+    <div id="home">
+        <h1>My Pets</h1>
+        <p>This website is dedicated to pets I have!</p>
+        <img src="images/dougandpeanut.jpeg" width="600">
+    </div>
+<!--End Main Page/info-->
+
+<!--Start Video - Video of doug and peanut-->
+<section>
+    <div id="video">
+        <p>Here's a video of Doug and Peanut playing at the Sand Dunes</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iwel2Znv7-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+    <!--End video-->
+
+<!--Start Photo Gallery-->
+<section>
+    <div id="gallery">
+        <h1>Gallery</h1>
+        <p>A few photos of Doug and Peanut</p>
+        <div class="row">
+            <!--Photo modal 1-->
+                <div class="column">
+                    <img src="./images/doug/doug_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 200px; margin: 10px;">
+                </div>
+            <!--End modal 1-->
+            <!--Photo modal 2-->
+            <div class="column">
+                <img src="./images/peanut/peanut_1.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 200px; margin: 10px;">
+            </div>
+            <!--End modal 2-->
+        </div>
+    </div>
+</section>
+<!--End Photo Gallery-->
+
+<!--Modal light box-->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img src="./images/doug/doug_1.jpeg" alt="Doug pic" style="width: 100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 2</div>
+            <img src="./images/peanut/peanut_1.jpeg" alt="Peanut pic" style="width: 100%">
+        </div>
+        <!--Next/Previous controls-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!--Caption text-->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--Thumbnail image controls-->
+        <div class="column">
+            <img class="demo" src="./images/doug/doug_1.jpeg" onclick="currentSlide(1)" alt="doug pic" style="width: 100px;">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="./images/peanut/peanut_1.jpeg" onclick="currentSlide(2)" alt="peanut pic" style="width: 100px;">
+        </div>
+    </div>
+</div>
+
+<!--Start Contact Form-->
+<section>
+    <div id="contact">
+        <div>
+            <h1>Contact For Any Questions</h1>
+            <p>Please provide your contact information</p>
+                <div>
+                    <form action="" method="post">
+                        <input class="rsvp" type="text" value="First Name">
+                                <input class="rsvp" type="text" value="Last Name">
+                                <input class="rsvp" type="text" value="Email Address">
+                                <input class="rsvp" type="text" value="Phone Number">
+                                <div>
+                                    <input type="submit" value="Submit">
+                                </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</section>
+<!--End Contact Form-->
+</body>
+<footer>Copyright Doug and Peanut &copy; 2022</footer>
+</html>
